@@ -1,3 +1,38 @@
+function resetFilters() {
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const publCards = document.querySelectorAll('.publ-card');
+    const proyCards = document.querySelectorAll('.proy-card');
+    const featuredArticle = document.querySelector('.featured-article');
+
+    // Resetear botones de categoría
+    categoryBtns.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-category') === 'todos') {
+            btn.classList.add('active');
+        }
+    });
+
+    // Mostrar todas las tarjetas de publicaciones
+    publCards.forEach(card => {
+        card.style.display = 'block';
+        card.style.animation = 'fadeIn 0.5s ease forwards';
+    });
+
+    // Mostrar todas las tarjetas de proyectos
+    proyCards.forEach(card => {
+        card.style.display = 'block';
+        card.style.animation = 'fadeIn 0.5s ease forwards';
+    });
+
+    // Mostrar artículo destacado si existe
+    if (featuredArticle) {
+        featuredArticle.style.display = 'block';
+        featuredArticle.style.animation = 'fadeIn 0.5s ease forwards';
+    }
+}
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-link");
     const pages = document.querySelectorAll(".page");
@@ -26,13 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (targetPage) {
                 targetPage.classList.add("active");
             }
+
+            resetFilters();
         });
     });
 
 
     const categoryBtns = document.querySelectorAll('.category-btn') ;
-    const blogCards = document.querySelectorAll('.blog-card') ;
+    const publCards = document.querySelectorAll('.publ-card') ;
     const featuredArticle = document.querySelector('.featured-article') ;
+    const proyCards = document.querySelectorAll('.proy-card') ;
 
     categoryBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -43,9 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const category = btn.getAttribute('data-category') ;
 
             // Filtrar artículos
-            blogCards.forEach(card => {
+            publCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category') ;
-                if (category === 'all' || cardCategory === category) {
+                if (category === 'todos' || cardCategory === category) {
                     card.style.display = 'block' ;
                     card.style.animation = 'fadeIn 0.5s ease forwards' ;
                 } else {
@@ -53,10 +91,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }) ;
 
+            proyCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category') ;
+                if (category === 'todos' || cardCategory === category) {
+                    card.style.display = 'block' ;
+                    card.style.animation = 'fadeIn 0.5s ease forwards' ;
+                } else {
+                    card.style.display = 'none' ;
+                }
+            }) ;
+
+
             // Mostrar/ocultar artículo destacado
             if (featuredArticle) {
                 const featuredCategory = featuredArticle.getAttribute('data-category') ;
-                if (category === 'all' || featuredCategory === category) {
+                if (category === 'todos' || featuredCategory === category) {
                     featuredArticle.style.display = 'block' ;
                     featuredArticle.style.animation = 'fadeIn 0.5s ease forwards' ;
                 } else {
@@ -65,31 +114,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }) ;
     }) ;
-});
+    
 
 
-// Al hacer clic en “Leer más”
-document.querySelectorAll('.btn-read-more').forEach(btn => {
-  btn.addEventListener('click', e => {
-    const card = e.currentTarget.closest('.project-card');
-
-    // Ocultar todas las tarjetas menos la activa
-    document.querySelectorAll('.project-card').forEach(c => {
-      if (c !== card) c.classList.add('hidden');
-    });
-
-    // Expandir y mostrar descripción completa
-    card.classList.add('expanded');
-    card.querySelector('.project-full-description').classList.remove('hidden');
-
-    // Opcional: desplazar suavemente hasta la tarjeta
-    card.scrollIntoView({ behavior: 'smooth' });
-  });
 });
 
 
 
+/*PARA DESPUÉS, ES DE LOS COLORES */
 
+
+
+/*
 const toggleBtn   = document.getElementById('theme-toggle');
 const picker      = document.getElementById('theme-picker');
 const options     = document.querySelectorAll('.color-option');
@@ -122,3 +158,4 @@ document.addEventListener('click', e => {
   }
 });
 
+*/
