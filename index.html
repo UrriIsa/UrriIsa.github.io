@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Urrutia-Alfaro - Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div class="particles" id="particles"></div>
+
+
+
+
+
+    <!-- Botón principal --> <!--
+<button id="theme-toggle" aria-label="Abrir paleta de temas">🎨</button>-->
+
+<!-- Contenedor de opciones circulares -->
+ <!--
+<div id="theme-picker">
+  <button class="color-option" data-theme="light" aria-label="Tema claro"></button>
+  <button class="color-option" data-theme="dark"  aria-label="Tema oscuro"></button>
+  <button class="color-option" data-theme="green" aria-label="Tema verde"></button>
+  <button class="color-option" data-theme="blue"  aria-label="Tema azul"></button>
+  <button class="color-option" data-theme="purple" aria-label="Tema púrpura"></button>
+</div>
+-->
+
+
+
+<!-- NOTAS 02 DE AGOSTO : 
+    - Cambiar el nombre que utilicé de blog, es nombre reutilizado que no me gusta en este proyecto
+    - Después de poner bien las variables de color quiero hacer los cambios de colores
+    - Quitar los Lorem ipsum 
+
+-->
+
+
+
+    
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="projects">Proyectos</a></li>
+            <li><a href="#" class="nav-link" data-page="blog">Publicaciones</a></li>
+        </ul>
+    </nav>
+    <script src="./js/script.js"></script>
+
+     <div class="content">
+        
+        <!-- HOME PAGE -->
+        <div class="page active" id="home">
+            <div class="container">
+                <div class="home-page">
+                    
+                    <div class="me-section fade-in">
+                        <div class="profile-avatar">👨‍💻</div>
+                        <h1 class="me-title">Isaac Urrutia-Alfaro</h1>
+                        <h2 class="me-subtitle">Estudiante de Ciencias de la computación</h2>
+                        <p class="me-description">
+                            Cuenta con experiencia en programación y proyectos técnicos.
+                            Aplica soluciones computacionales a retos interdisciplinarios en entornos colaborativos. 
+                        </p>
+                        
+                        <a href="mailto:urrrisaac@gmail.com" class="contact-button">
+                            Contactar
+                        </a>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/UrriIsa" class="social-link github" target="_blank" title="GitHub">
+                                <img src="./img/github-logo.png" alt="GitHub" class="social-icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/isaac-urrutia-alfaro/" class="social-link linkedin" target="_blank" title="LinkedIn">
+                                <img src="./img/linkedin-logo.png" alt="GitHub" class="social-icon">
+                            </a>
+                            <a href="https://codeforces.com/profile/Urri" class="social-link instagram" target="_blank" title="Instagram">
+                                <img src="./img/codeforces-logo.png" alt="GitHub" class="social-icon">
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Isaac-Urrutia-Alfaro" class="social-link researchgate" target="_blank" title="Researchgate">
+                                <img src="./img/researchgate-logo.png" alt="Researchgate" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- PROJECTS PAGE  -->
+
+        <div class="page" id="projects">
+            <div class="container">
+                <div class="projects-page">
+                    <div class="fade-in">
+                        <h1 class="page-title">Mis Proyectos</h1>
+                        <p class="page-subtitle">
+                            Una colección de mis trabajos más destacados y proyectos personales que reflejan mi pasión por el desarrollo.
+                        </p>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card fade-in">
+                            <div class="project-icon">🤖</div>
+                            <h3 class="project-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn btn-primary">Demo</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="project-card fade-in">
+                            <div class="project-icon">🔒</div>
+                            <h3 class="project-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="project-description">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Elasticsearch</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn btn-primary">Demo</a>
+                                <a href="#" class="project-btn btn-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOG/PUBLICACIONES PAGE -->
+        <div class="page" id="blog">
+            <div class="container">
+                <div class="blog-page">
+                    
+                    <div class="fade-in">
+                        <h1 class="page-title">Publicaciones</h1>
+                        <p class="page-subtitle">
+                            Artículos, tutoriales y reflexiones sobre desarrollo, tecnología y programación.
+                        </p>
+                    </div>
+
+                    <!-- Categorías de filtro -->
+                    <div class="blog-categories fade-in">
+                        <button class="category-btn active" data-category="all">Todos</button>
+                        <button class="category-btn" data-category="ai">IA & ML</button>
+                        <button class="category-btn" data-category="web">Web Dev</button>
+                        <button class="category-btn" data-category="security">Seguridad</button>
+                        <button class="category-btn" data-category="mobile">Mobile</button>
+                        <button class="category-btn" data-category="devops">DevOps</button>
+                        <button class="category-btn" data-category="hola">hola</button>
+                    </div>
+
+                    <!-- Artículo destacado -->
+                     <!--
+                    <article class="featured-article fade-in" data-category="ai">
+                        <div class="blog-date">31 Jul 2025</div>
+                        <h2 class="featured-title">El Futuro de la IA en el Desarrollo de Software</h2>
+                        <p class="featured-excerpt">
+                            Exploramos las tendencias emergentes en inteligencia artificial y cómo están transformando 
+                            radicalmente la manera en que desarrollamos software. Desde herramientas de código asistido 
+                            hasta sistemas completamente autónomos, analizamos lo que nos depara el futuro.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">IA</span>
+                            <span class="blog-tag">Desarrollo</span>
+                            <span class="blog-tag">Futuro</span>
+                            <span class="blog-tag">Automatización</span>
+                        </div>
+                        <a href="#" class="blog-link">Leer Artículo Completo</a>
+                    </article>
+                    -->
+                    
+                    <div class="blog-grid">
+                        <!-- Artículos de IA y ML -->
+                        <article class="blog-card fade-in" data-category="ai">
+                            <div class="blog-date">28 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">TensorFlow</span>
+                                <span class="blog-tag">Neural Networks</span>
+                                <span class="blog-tag">Python</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="ai">
+                            <div class="blog-date">25 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Machine Learning</span>
+                                <span class="blog-tag">Principiantes</span>
+                                <span class="blog-tag">Algoritmos</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <!-- Artículos de Desarrollo Web -->
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">22 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">React</span>
+                                <span class="blog-tag">JavaScript</span>
+                                <span class="blog-tag">Frontend</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">20 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">CSS</span>
+                                <span class="blog-tag">Layout</span>
+                                <span class="blog-tag">Responsive</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">15 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">IA</span>
+                                <span class="blog-tag">Web Dev</span>
+                                <span class="blog-tag">Machine Learning</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <!-- Artículos de Seguridad -->
+                        <article class="blog-card fade-in" data-category="hola">
+                            <div class="blog-date">18 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">OWASP</span>
+                                <span class="blog-tag">Vulnerabilidades</span>
+                                <span class="blog-tag">Prevención</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="security">
+                            <div class="blog-date">8 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Seguridad</span>
+                                <span class="blog-tag">DevSecOps</span>
+                                <span class="blog-tag">Backend</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <!-- Artículos de Mobile -->
+                        <article class="blog-card fade-in" data-category="mobile">
+                            <div class="blog-date">12 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Flutter</span>
+                                <span class="blog-tag">React Native</span>
+                                <span class="blog-tag">Cross-platform</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="mobile">
+                            <div class="blog-date">10 Jun 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">React Native</span>
+                                <span class="blog-tag">Mobile</span>
+                                <span class="blog-tag">Cross-platform</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <!-- Artículos de DevOps -->
+                        <article class="blog-card fade-in" data-category="devops">
+                            <div class="blog-date">5 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Kubernetes</span>
+                                <span class="blog-tag">Containers</span>
+                                <span class="blog-tag">Orchestration</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="devops">
+                            <div class="blog-date">18 Jun 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Docker</span>
+                                <span class="blog-tag">DevOps</span>
+                                <span class="blog-tag">Containers</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="devops">
+                            <div class="blog-date">2 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">CI/CD</span>
+                                <span class="blog-tag">GitHub Actions</span>
+                                <span class="blog-tag">Automation</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <!-- Más artículos generales -->
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">1 Jul 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">React</span>
+                                <span class="blog-tag">Vue</span>
+                                <span class="blog-tag">Frontend</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+                        
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">25 Jun 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">SQL</span>
+                                <span class="blog-tag">Performance</span>
+                                <span class="blog-tag">Backend</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="web">
+                            <div class="blog-date">15 Jun 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">GraphQL</span>
+                                <span class="blog-tag">REST</span>
+                                <span class="blog-tag">APIs</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+
+                        <article class="blog-card fade-in" data-category="ai">
+                            <div class="blog-date">8 Jun 2025</div>
+                            <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="blog-excerpt">
+                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                            </p>
+                            <div class="blog-tags">
+                                <span class="blog-tag">NLP</span>
+                                <span class="blog-tag">Python</span>
+                                <span class="blog-tag">NLTK</span>
+                            </div>
+                            <a href="#" class="blog-link">Leer Más</a>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+</body>
+</html>
