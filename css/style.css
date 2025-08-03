@@ -152,7 +152,7 @@ body {
 
   /* Gradientes */
   --gradient-text: linear-gradient(45deg, #02163a, #02163a);
-  --gradient-project: linear-gradient(45deg, var(--color-highlight-light), var(--color-highlight-lighter));
+  --gradient-proy: linear-gradient(45deg, var(--color-highlight-light), var(--color-highlight-lighter));
   --gradient-btn-primary: linear-gradient(45deg, #0f7f56, #a8c5a0);
   --gradient-btn-secondary: linear-gradient(45deg, #93825b, #c7b299);
 }
@@ -241,7 +241,7 @@ body {
 
 /*------------------------------- PÁGINA DE HOME -------------------------------*/
 
-.home-page {
+.inicio-page {
     display: flex ;
     flex-direction: column ;
     justify-content: center ;
@@ -285,14 +285,14 @@ body {
 
 .me-subtitle {
     font-size: 1.3rem ;
-    color: var(--color-resalt) ;
+    color : #83593e ;
     margin-bottom: 25px ;
     font-weight: 500 ; 
 }
 
 .me-description {
     font-size: 1.1rem ;
-    color: #6c7b7f  ;
+    color: #586568  ;
     max-width: 500px ;
     margin: 0 auto 40px ;
     line-height: 1.7 ;
@@ -354,6 +354,7 @@ body {
 }
 
 
+
 /*---------------------- PÁGINA DE PROYECTOS ----------------------*/
 
 .page-title {
@@ -367,21 +368,21 @@ body {
 .page-subtitle {
     text-align: center ;
     font-size: 1.2rem ;
-    color: var(--color-resalt)  ;
+    color: #586568 ;
     margin-bottom: 60px ;
     max-width: 600px ;
     margin-left: auto ;
     margin-right: auto ;
 }
 
-.projects-grid {
+.proys-grid {
     display: grid ;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) ;
     gap: 40px ;
     margin-bottom: 80px ;
 }
 
-.project-card {
+.proy-card {
     background: rgba(255, 255, 255, 0.9) ;
     border-radius: 20px ;
     padding: 30px ;
@@ -393,7 +394,7 @@ body {
     overflow: hidden ;
 }
 
-.project-card::before {
+.proy-card::before {
     content: '' ;
     position: absolute ;
     top: 0 ;
@@ -405,32 +406,32 @@ body {
 }
 
 
-.project-card:hover {
+.proy-card:hover {
     transform: translateY(-10px) ;
     box-shadow: 0 20px 60px rgba(139, 195, 174, 0.2) ;
 }
 
-.project-icon {
+.proy-icon {
     font-size: 3rem ;
     margin-bottom: 20px ;
     display: block ;
 }
 
-.project-title {
+.proy-title {
     font-size: 1.5rem ;
     font-weight: 700 ;
     color: #535353 ;
     margin-bottom: 15px ;
 }
 
-.project-description {
+.proy-description {
     color: #6c7b7f  ;
     line-height: 1.6 ;
     margin-bottom: 25px ;
     text-align: justify;
 }
 
-.project-tech {
+.proy-tech {
     justify-content: space-around;
     display: flex ;
     flex-wrap: wrap ;
@@ -440,19 +441,19 @@ body {
 
 .tech-tag {
     background: var(--color-tags) ;
-    color: #6c7b7f ;
+    color: #586568 ;
     padding: 4px 12px ;
     border-radius: 15px ;
     font-size: 0.85rem ;
     font-weight: 500 ;
 }
 
-.project-links {
+.proy-links {
     display: flex ;
     gap: 15px ;
 }
 
-.project-btn {
+.proy-btn {
     flex: 1 ;
     padding: 12px 20px ;
     border-radius: 25px ;
@@ -476,7 +477,7 @@ body {
     box-shadow: 0 5px 15px rgba(212, 202, 179, 0.3) ;
 }
 
-.project-btn:hover {
+.proy-btn:hover {
     transform: translateY(-2px) ;
 }
 
@@ -494,14 +495,14 @@ body {
 /* ---------------------------- PUBLICACIONES -----------------------------------*/
 
 
-.blog-grid {
+.publ-grid {
     display: grid ;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) ;
     gap: 30px ;
     margin-bottom: 80px ;
 }
 
-.blog-card {
+.publ-card {
     background: rgba(255, 255, 255, 0.9) ;
     border-radius: 15px ;
     padding: 25px ;
@@ -512,12 +513,12 @@ body {
     position: relative ;
 }
 
-.blog-card:hover {
+.publ-card:hover {
     transform: translateY(-8px) ;
     box-shadow: 0 15px 50px rgba(139, 195, 174, 0.2) ;
 }
 
-.blog-card::before {
+.publ-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -530,14 +531,14 @@ body {
   z-index: 1;
 }
 
-.blog-date {
+.publ-date {
     color: var(--color-textoCards) ;
     font-size: 0.9rem ;
     font-weight: 600 ;
     margin-bottom: 15px ;
 }
 
-.blog-title {
+.publ-title {
     font-size: 1.3rem ;
     font-weight: 700 ;
     color: #535353 ;
@@ -545,14 +546,14 @@ body {
     line-height: 1.4 ;
 }
 
-.blog-excerpt {
+.publ-excerpt {
     color: #6c7b7f  ;
     line-height: 1.6 ;
     margin-bottom: 20px ;
     text-align: justify;
 }
 
-.blog-tags {
+.publ-tags {
     display: flex ;
     flex-wrap: wrap ;
     gap: 8px ;
@@ -560,20 +561,20 @@ body {
     justify-content: space-around;
 }
 
-.blog-tag {
+.publ-tag {
     background: var(--color-tags) ;
-    color: #6c7b7f ;
+    color: #586568 ;
     padding: 4px 10px ;
     border-radius: 12px ;
     font-size: 0.8rem ;
     font-weight: 500 ;
 }
 
-.blog-link {
-    display: block;        /* pasa de inline-block a bloque */
-    width: 100%;           /* ocupa todo el ancho disponible */
-    box-sizing: border-box;/* para que padding no desborde el ancho */
-    text-align: center;
+.publ-link {
+    display: block ;        
+    width: 100% ;           
+    box-sizing: border-box ; /* para que padding no desborde el ancho */
+    text-align: center ;
     color: var(--color-textoCards) ;
     text-decoration: none ;
     font-weight: 600 ;
@@ -584,14 +585,14 @@ body {
     font-size: 0.9rem ;
 }
 
-.blog-link:hover {
+.publ-link:hover {
     background: linear-gradient(45deg, var(--color-textoCards), #a8c5a0) ;
     color: white ;
     transform: translateY(-2px) ;
 }
 
-/* Blog Categories */
-.blog-categories {
+/* publ Categories */
+.publ-categories, .proy-categories {
     display: flex ;
     justify-content: center ;
     gap: 15px ;
