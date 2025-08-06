@@ -30,8 +30,7 @@
 
 
 
-<!-- NOTAS 02 DE AGOSTO : 
-    - Cambiar el nombre que utilicé de blog, es nombre reutilizado que no me gusta en este proyecto
+<!-- NOTAS 05 DE AGOSTO : 
     - Después de poner bien las variables de color quiero hacer los cambios de colores
     - Quitar los Lorem ipsum 
 
@@ -162,19 +161,22 @@
                     <div class="fade-in">
                         <h1 class="page-title">Publicaciones</h1>
                         <p class="page-subtitle">
-                            Artículos, tutoriales y reflexiones sobre desarrollo, tecnología y programación.
+                            Artículos, investigaciones y papers publicados. <br> Programación, ciencia y cultura.
                         </p>
                     </div>
 
                     <!-- Categorías de filtro -->
                     <div class="publ-categories fade-in">
                         <button class="category-btn active" data-category="todos">Todos</button>
+                        <!--
                         <button class="category-btn" data-category="ai">IA & ML</button>
                         <button class="category-btn" data-category="web">Web Dev</button>
                         <button class="category-btn" data-category="security">Seguridad</button>
                         <button class="category-btn" data-category="mobile">Mobile</button>
                         <button class="category-btn" data-category="devops">DevOps</button>
-                        <button class="category-btn" data-category="hola">hola</button>
+                        -->
+                        <button class="category-btn" data-category="otros">Otros</button>
+                        
                     </div>
 
                     <!-- Artículo destacado -->
@@ -198,7 +200,8 @@
                     -->
                     
                     <div class="publ-grid">
-                        <!-- Artículos de IA y ML -->
+                        <!--
+
                         <article class="publ-card fade-in" data-category="ai">
                             <div class="publ-date">28 Jul 2025</div>
                             <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
@@ -213,219 +216,21 @@
                             <a href="#" class="publ-link">Leer Más</a>
                         </article>
 
-                        <article class="publ-card fade-in" data-category="ai">
-                            <div class="publ-date">25 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">Machine Learning</span>
-                                <span class="publ-tag">Principiantes</span>
-                                <span class="publ-tag">Algoritmos</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <!-- Artículos de Desarrollo Web -->
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">22 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">React</span>
-                                <span class="publ-tag">JavaScript</span>
-                                <span class="publ-tag">Frontend</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">20 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">CSS</span>
-                                <span class="publ-tag">Layout</span>
-                                <span class="publ-tag">Responsive</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">15 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">IA</span>
-                                <span class="publ-tag">Web Dev</span>
-                                <span class="publ-tag">Machine Learning</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <!-- Artículos de Seguridad -->
-                        <article class="publ-card fade-in" data-category="hola">
-                            <div class="publ-date">18 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">OWASP</span>
-                                <span class="publ-tag">Vulnerabilidades</span>
-                                <span class="publ-tag">Prevención</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="security">
-                            <div class="publ-date">8 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">Seguridad</span>
-                                <span class="publ-tag">DevSecOps</span>
-                                <span class="publ-tag">Backend</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <!-- Artículos de Mobile -->
-                        <article class="publ-card fade-in" data-category="mobile">
-                            <div class="publ-date">12 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">Flutter</span>
-                                <span class="publ-tag">React Native</span>
-                                <span class="publ-tag">Cross-platform</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="mobile">
-                            <div class="publ-date">10 Jun 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">React Native</span>
-                                <span class="publ-tag">Mobile</span>
-                                <span class="publ-tag">Cross-platform</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <!-- Artículos de DevOps -->
-                        <article class="publ-card fade-in" data-category="devops">
-                            <div class="publ-date">5 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">Kubernetes</span>
-                                <span class="publ-tag">Containers</span>
-                                <span class="publ-tag">Orchestration</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="devops">
-                            <div class="publ-date">18 Jun 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">Docker</span>
-                                <span class="publ-tag">DevOps</span>
-                                <span class="publ-tag">Containers</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="devops">
-                            <div class="publ-date">2 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">CI/CD</span>
-                                <span class="publ-tag">GitHub Actions</span>
-                                <span class="publ-tag">Automation</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <!-- Más artículos generales -->
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">1 Jul 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">React</span>
-                                <span class="publ-tag">Vue</span>
-                                <span class="publ-tag">Frontend</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
+                        -->
                         
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">25 Jun 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">SQL</span>
-                                <span class="publ-tag">Performance</span>
-                                <span class="publ-tag">Backend</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
 
-                        <article class="publ-card fade-in" data-category="web">
-                            <div class="publ-date">15 Jun 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
+                        <article class="publ-card fade-in" data-category="otros">
+                            <div class="publ-date">Marzo - Agosto 2022</div>
+                            <h3 class="publ-title">Geoparque Mixteca Alta, un espacio único</h3>
                             <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
+                                Investigación presentada en el coloquio virtual del Programa Jóvenes Hacia la Investigación. Asesorado por la profesora María Guadalupe Rodríguez Pérez. El proyecto analizó factores geográficos, históricos y culturales del Geoparque Mixteca Alta. Se resaltó su valor patrimonial a nivel regional y como Geoparque Global UNESCO. Publicado en : El Ateneo de Coyoacán, No. 6, Página 146.
                             </p>
                             <div class="publ-tags">
-                                <span class="publ-tag">GraphQL</span>
-                                <span class="publ-tag">REST</span>
-                                <span class="publ-tag">APIs</span>
+                                <span class="publ-tag">Geoparque</span>
+                                <span class="publ-tag">Geografía</span>
+                                <span class="publ-tag">Cultura</span>
                             </div>
-                            <a href="#" class="publ-link">Leer Más</a>
-                        </article>
-
-                        <article class="publ-card fade-in" data-category="ai">
-                            <div class="publ-date">8 Jun 2025</div>
-                            <h3 class="publ-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="publ-excerpt">
-                                Lorem ipsum dolor sit amet. Qui officia vitae sit repellendus doloribus quo voluptates rerum. Ut voluptatem aperiam quo eligendi error eum cupiditate repudiandae sed maxime suscipit quo ipsum reiciendis aut amet iste. Et excepturi totam aut minus necessitatibus ut laudantium deleniti.
-                            </p>
-                            <div class="publ-tags">
-                                <span class="publ-tag">NLP</span>
-                                <span class="publ-tag">Python</span>
-                                <span class="publ-tag">NLTK</span>
-                            </div>
-                            <a href="#" class="publ-link">Leer Más</a>
+                            <a href="https://www.prepa6.unam.mx/ENP6/_P6/publicaciones/ateneo/ateneo_ne_06.html" target="_blank" class="publ-link">Leer Más</a>
                         </article>
                     </div>
                     
