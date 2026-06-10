@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Isaac Urrutia</title>
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'> 
+    <link rel='preconnect' href='https://fonts.gstatic.com'> <!-- preconnect para que tarde menos en cargar las fuentes, crossorigin para evitar problemas con esos archivos reales de las fuentes-->
+    <link rel='icon' href='🌿'>
+    <link rel='icon' href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌿</text></svg>'>  <!-- Para compatibilidad-->
+
+    <!-- con data:image/svg+xml le digo q no busque una imagen, si no que la estoy dando y la renderice, es un data uri (incrusta datos directo como si fuera recurso externo)-->
+    <!--<svg> es imagen vectorial-->
+    <!--xmlns="..." es identificador para que el navegador sepa que el codigo sigue con la reglas del SVG-->
+    <!--viewBox define el tamaño del marco (0 0 inicio y 100 100 ancho y alto)-->
+    <!--<text> imagen vectorial, interpreta caracteres (emoji) como texto, y='.9em' para centrarlo-->
+
+    <!-- ----------------------------------------------------------- -->
+    <!-- |~ CURSOR PERSONALIZADO-->
+    <div class='cursorDot'> </div>
+    <div class='cursorRing'> </div>
+
+    <!-- |~ NAVBAR-->
+    <nav>
+        <a class='navLogo' href='#' data-goto='home'> Isaac Urrutia (Urri) </a> <!-- ancla para la navegacion, href='#' para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
+        <ul class='navLinks'>
+            <li><a href='#' data-page='home'>Home</a></li>
+            <li><a href='#' data-page='portfolio'>Portfolio</a></li>
+            <li><a href='#' data-page='presentations'>Presentation</a></li>
+            <li><a href='#' data-page='publications'>Publications</a></li>
+            <li><a href='#' data-page='teaching'>Teaching</a></li>
+            <li><a href='#' data-page='cv'>CV</a></li>
+        </ul>
+        <button class='navMenuBtn'>☰</button>
+    </nav>
+
+    <!-- ----------------------------------------------------------- -->
+    <!-- |~ PAGINA - HOME-->
+    <div class='page' id='pageHome'>
+        <div class='me'>
+            <div class='meTextCol'>
+                <span class='meTag'> Computing · Biology · Art </span>
+
+                <h1 class='meName'>
+                    Isaac <br>
+                    <span class='outline'>Urrut</span><span class='accent'>ia</span><!--outline (contorno)por la letra y el accent para el color diferente-->
+                </h1>
+
+                <p class='meDesc'>
+                    Computer scientist and researcher of "" bridging academia and industry, focused on artificial intelligence, biotechnology and computational neuroscience.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</head>
+<body>
+    
+</body>
+</html>
