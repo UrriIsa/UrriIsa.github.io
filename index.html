@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+    <!--
+    COLORES IDEAS : 
+    lavanda c8b4ff
+    morado acido BF00FF
+
+    naranja #fe601e
+    acid #c8f53b
+    azul #5be0f5
+
+    rosa FC0FC0
+    
+    -->
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Isaac Urrutia</title>
@@ -38,7 +50,10 @@
     <!-- ----------------------------------------------------------- -->
     <!-- |~ PAGINA - HOME-->
     <div class='page' id='pageHome'>
-        <div class='me'>
+
+        <!-- YO -->
+        <section class='me'>
+
             <div class='meTextCol'>
                 <span class='meTag'> Computing · Biology · Art </span>
 
@@ -50,8 +65,51 @@
                 <p class='meDesc'>
                     Computer scientist and researcher of "" bridging academia and industry, focused on artificial intelligence, biotechnology and computational neuroscience.
                 </p>
+
+                <div class='meCTAs'>
+                    <a class='btn btnPrimary' href="#" data-goto='portfolio'> See Portfolio</a>
+                    <a class='btn btnGhost' href="#" data-goto='cv'> See CV</a>
+                </div>
+            </div>
+
+            <div class='meVisualCol'>
+                <!-- <div class='meBGShape'></div> -->
+
+                <div class='mePhotoWrap'>
+                    <img src="./" alt="Urri" onerror='this.style.background="#1e1e1e"; this.src=""'>
+                    <div clas='mePhotoBorder'></div>
+                </div>
+
+                <div class='meFloatTag meFloatTag1'>
+                    <span class='dot'></span>
+                    Available to collaborate
+                </div>
+
+                <div class='meFloatTag meFloatTag2'>
+                    <span class='dot'></span>
+                    Hola
+                </div>
+                <!-- -->
+            </div>
+
+            <div class='meScrollHint'> Scroll </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <!-- Para el div externo hago overflow:hidden para evitar q el contenido se desplace fuera del anto de la pantalla (lo que sale se oculta). border- top y bottom para los "rieles". El padding con shorthand de dos es arriba-abajo (parte1) izq-der(parte2), para no pegar el texto. -->
+        <!-- Para el div interno con display:flex para alinear sus hijos en una fila. gap:48px para la separación constante de 48pixeles entre elementos. La animación es marquee que dura 18s es lineal (no hay variaciones) e infinita.-->
+         <!-- -->
+        <div style='overflow:hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:14px 0;'>
+            <div class='marquee-track' style='display:flex; gap:48px; width:max-content; animation:marquee 18s linear infinite; white-space:nowrap; font-family:"Unbounded",sans-serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#666;'>
+                <span>MATERIA 1</span><span style='color:#c8f53b'>✦</span>
+                <span>MATERIA 2</span><span style='color:#c8f53b'>✦</span>
+                <span>MATERIA 3</span><span style='color:#c8f53b'>✦</span>
+                <span>MATERIA 4</span><span style='color:#c8f53b'>✦</span>
+                <span>MATERIA 5</span><span style='color:#c8f53b'>✦</span>
             </div>
         </div>
+
+
     </div>
 
 </head>
