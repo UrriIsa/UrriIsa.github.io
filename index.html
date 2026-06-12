@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
     <!--
     COLORES IDEAS : 
@@ -11,16 +11,18 @@
     azul #5be0f5
 
     rosa FC0FC0
+
+    DECISIÓN : acid #c8f53b
     
     -->
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Urrutia</title>
-    <link rel='stylesheet' href='./css/style.css'>
-    <link rel='preconnect' href='https://fonts.googleapis.com'> 
-    <link rel='preconnect' href='https://fonts.gstatic.com'> <!-- preconnect para que tarde menos en cargar las fuentes, crossorigin para evitar problemas con esos archivos reales de las fuentes-->
-    <link rel='icon' href='🌿'>
-    <link rel='icon' href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌿</text></svg>'>  <!-- Para compatibilidad-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- preconnect para que tarde menos en cargar las fuentes, crossorigin para evitar problemas con esos archivos reales de las fuentes-->
+    <link rel="icon" href="🌿">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">  <!-- Para compatibilidad-->
 
     <!-- con data:image/svg+xml le digo q no busque una imagen, si no que la estoy dando y la renderice, es un data uri (incrusta datos directo como si fuera recurso externo)-->
     <!--<svg> es imagen vectorial-->
@@ -30,87 +32,206 @@
 
     <!-- ----------------------------------------------------------- -->
     <!-- |~ CURSOR PERSONALIZADO-->
-    <div class='cursorDot'> </div>
-    <div class='cursorRing'> </div>
+    <div class="cursorDot"> </div>
+    <div class="cursorRing"> </div>
 
     <!-- |~ NAVBAR-->
     <nav>
-        <a class='navLogo' href='#' data-goto='home'> Isaac Urrutia (Urri) </a> <!-- ancla para la navegacion, href='#' para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
-        <ul class='navLinks'>
-            <li><a href='#' data-page='home'>Home</a></li>
-            <li><a href='#' data-page='portfolio'>Portfolio</a></li>
-            <li><a href='#' data-page='presentations'>Presentation</a></li>
-            <li><a href='#' data-page='publications'>Publications</a></li>
-            <li><a href='#' data-page='teaching'>Teaching</a></li>
-            <li><a href='#' data-page='cv'>CV</a></li>
+        <a class="navLogo" href="#" data-goto="home"> Isaac Urrutia (Urri) </a> <!-- ancla para la navegacion, href="#" para autoreferencia, creamos la info personalizada con data- y le llamamos destino con valor home-->
+        <ul class="navLinks">
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="portfolio">Portfolio</a></li>
+            <li><a href="#" data-page="presentations">Presentation</a></li>
+            <li><a href="#" data-page="publications">Publications</a></li>
+            <li><a href="#" data-page="teaching">Teaching</a></li>
+            <li><a href="#" data-page="cv">CV</a></li>
         </ul>
-        <button class='navMenuBtn'>☰</button>
+        <button class="navMenuBtn">☰</button>
     </nav>
 
     <!-- ----------------------------------------------------------- -->
-    <!-- |~ PAGINA - HOME-->
-    <div class='page' id='pageHome'>
+    <!-- |~ [ PAGINA - HOME ]-->
+    <div class="page" id="pageHome">
 
-        <!-- YO -->
-        <section class='me'>
+        <!-- [ YO ] -->
+        <section class="me">
 
-            <div class='meTextCol'>
-                <span class='meTag'> Computing · Biology · Art </span>
+            <div class="meTextCol">
+                <span class="meTag"> Computing · Biology · Art </span>
 
-                <h1 class='meName'>
+                <h1 class="meName">
                     Isaac <br>
-                    <span class='outline'>Urrut</span><span class='accent'>ia</span><!--outline (contorno)por la letra y el accent para el color diferente-->
+                    <span class="outline">Urrut</span><span class="accent">ia</span><!--outline (contorno)por la letra y el accent para el color diferente-->
                 </h1>
 
-                <p class='meDesc'>
+                <p class="meDesc">
                     Computer scientist and researcher of "" bridging academia and industry, focused on artificial intelligence, biotechnology and computational neuroscience.
                 </p>
 
-                <div class='meCTAs'>
-                    <a class='btn btnPrimary' href="#" data-goto='portfolio'> See Portfolio</a>
-                    <a class='btn btnGhost' href="#" data-goto='cv'> See CV</a>
+                <div class="meCTAs">
+                    <a class="btn btnPrimary" href="#" data-goto="portfolio"> See Portfolio</a>
+                    <a class="btn btnGhost" href="#" data-goto="cv"> See CV</a>
                 </div>
             </div>
 
-            <div class='meVisualCol'>
-                <!-- <div class='meBGShape'></div> -->
+            <div class="meVisualCol">
+                <!-- <div class="meBGShape"></div> -->
 
-                <div class='mePhotoWrap'>
-                    <img src="./" alt="Urri" onerror='this.style.background="#1e1e1e"; this.src=""'>
-                    <div clas='mePhotoBorder'></div>
+                <div class="mePhotoWrap">
+                    <img src="./" alt="Urri" onerror="this.style.background='#1e1e1e'; this.src=''">
+                    <div clas="mePhotoBorder"></div>
                 </div>
 
-                <div class='meFloatTag meFloatTag1'>
-                    <span class='dot'></span>
+                <div class="meFloatTag meFloatTag1">
+                    <span class="dot"></span>
                     Available to collaborate
                 </div>
 
-                <div class='meFloatTag meFloatTag2'>
-                    <span class='dot'></span>
+                <div class="meFloatTag meFloatTag2">
+                    <span class="dot"></span>
                     Hola
                 </div>
                 <!-- -->
             </div>
 
-            <div class='meScrollHint'> Scroll </div>
-        </section>
+            <div class="meScrollHint"> Scroll </div>
+        </section> <!--Termina - [ YO ] -->
 
-        <!-- DIVISOR -->
+        <!-- [ DIVISOR ] -->
         <!-- Para el div externo hago overflow:hidden para evitar q el contenido se desplace fuera del anto de la pantalla (lo que sale se oculta). border- top y bottom para los "rieles". El padding con shorthand de dos es arriba-abajo (parte1) izq-der(parte2), para no pegar el texto. -->
         <!-- Para el div interno con display:flex para alinear sus hijos en una fila. gap:48px para la separación constante de 48pixeles entre elementos. La animación es marquee que dura 18s es lineal (no hay variaciones) e infinita.-->
          <!-- -->
-        <div style='overflow:hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:14px 0;'>
-            <div class='marquee-track' style='display:flex; gap:48px; width:max-content; animation:marquee 18s linear infinite; white-space:nowrap; font-family:"Unbounded",sans-serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#666;'>
-                <span>MATERIA 1</span><span style='color:#c8f53b'>✦</span>
-                <span>MATERIA 2</span><span style='color:#c8f53b'>✦</span>
-                <span>MATERIA 3</span><span style='color:#c8f53b'>✦</span>
-                <span>MATERIA 4</span><span style='color:#c8f53b'>✦</span>
-                <span>MATERIA 5</span><span style='color:#c8f53b'>✦</span>
+        <div style="overflow:hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:14px 0;"></div>
+            <div class="marqueeTrack" style="display:flex; gap:48px; width:max-content; animation:marquee 18s linear infinite; white-space:nowrap; font-family:'Unbounded',sans-serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#666;"></div>
+                <span>MATERIA 1</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 2</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 3</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 4</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 5</span><span style="color:#c8f53b">✦</span>
             </div>
-        </div>
+        </div> <!--Termina - [ DIVISOR ] -->
 
+        <!--[ SOBRE MI ]-->
+        <section class="section">
+            <div class="sectionLabel" style="color:#c8b4ff; font-size:1rem;" > About me </div>
+            <h2 class="sectionTitle">Science &amp; <span class="outline">Art</span></h2>
 
-    </div>
+            <div class="aboutGrid">
+                <div class="aboutText reveal">
+                    <p>
+                        I've focused on the intersection of computer science and biology. However, I enjoy applying the technical foundations of computing in interdisciplinary settings, so I've been working on broadening my perspective.
+                    </p>
+                    <p>
+                        My Social Service Internship at the Xylarum of the Institute of Biology, UNAM, led to a project that was presented at the XXIII Mexican Botanical Congress, held in Villahermosa, Tabasco. It is currently in the publication process.
+                    </p>
+                    <p>
+                        Outside of academia, art is one of my passions.
+                    </p>
+                </div>
+
+                <div class="statsGridReveal">
+                    <div class="statCard">
+                        <div class="statNumber c1" data-target="3.65"> 0 </div>
+                        <div class="statLabel"> GPA / 4.0 </div>
+                    </div>
+                    <div class="statCard">
+                        <div class="statNumber c2" data-target="3"> 0 </div>
+                        <div class="statLabel">Years of research</div>
+                    </div>
+                    <div class="statCard">
+                        <div class="statNumber c3" data-target="1"> 0 </div>
+                        <div class="statLabel"> Publications </div>
+                    </div>
+                    <div class="statCard">
+                        <div class="statNumber c4" data-target="1"> 0 </div>
+                        <div class="statLabel">Research Internships</div>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!--Termina - [ SOBRE MI ]-->
+
+        <!--[ DIVISOR ]-->
+        <div class="section-divider"></div>
+
+        <!-- [ PROYECTOS DESTACADOS ]-->
+        <section class="section">
+            <div class="sectionLabel"> Recent work</div>
+            <h2 class="sectionTitle">Features <span class="outline">Projects</span></h2>
+
+            <div class="portfolioGrid">
+
+                <div class="portfolioCard large reveal"  style="cursor:default;"> <!--el cursor:default para regresar el cursos-->
+
+                    <div class="card-bg" style="background:linear-gradient(150deg,#579a54 0%,#233d74 100%);"></div>
+
+                    <div class="cardContent">
+                        <span class="cardTag C"> C / Linux Dev </span>
+                        <h3 class="cardTitle"> Snake Game — Terminal Implementation </h3>
+                        <p class="cardDesc">Implementation of the classic game using the ncurses library for terminal manipulation in Linux/Unix environments.</p>
+                    </div>
+
+                    <div class="card-arrow">↗</div>
+                </div> <!-- fin card-->
+
+                <div class="portfolioCard medium reveal"  style="cursor:default;"> <!--el cursor:default para regresar el cursos-->
+
+                    <div class="card-bg" style="background:linear-gradient(150deg,#4b8d8d 0%,#0e4158 100%);"></div>
+
+                    <div class="cardContent">
+                        <span class="cardTag java"> Java </span>
+                        <h3 class="cardTitle"> Terminal Spelling Challenge </h3>
+                        <p class="cardDesc">Interactive console application developed in Java for spelling training and improvement using terminal logic.</p>
+                    </div>
+
+                    <div class="card-arrow">↗</div>
+                </div> <!-- fin card-->
+
+                <div class="portfolioCard medium reveal"  style="cursor:default;"> <!--el cursor:default para regresar el cursos-->
+
+                    <div class="card-bg" style="background:linear-gradient(150deg,#924c90 0%,#1d0848 100%);"></div>
+
+                    <div class="cardContent">
+                        <span class="cardTag ds"> Data Science </span>
+                        <h3 class="cardTitle"> Data analysis: UNAM Xylarum </h3>
+                        <p class="cardDesc">Project presented at a symposium on the statistical analysis and processing of biological data from the Xylarum of the Institute of Biology of the UNAM.</p>
+                    </div>
+
+                    <div class="card-arrow">↗</div>
+                </div> <!-- fin card-->
+                
+            </div>  <!-- fin div portfolio grid-->
+
+        </section> <!-- Termina - [ PROYECTOS DESTACADOS ]-->
+
+        <!-- [CONTACTO] -->
+        <section>
+            <h2 class="contactTitle">
+                Contact me <br>
+                <span class="outline">Let's collaborate</span>
+            </h2>
+
+            <p>Open to research projects, academic opportunities and artistic collaborations.
+            </p>
+
+            <a class="btn btnPrimary" style="margin:0 auto; font-size:14px; padding:18px 40px;" href="mailto:urrrisaac@gmail.com">
+                Write me
+            </a>
+
+            <div class="social-links">
+            <a class="social-link" href="https://github.com/UrriIsa">⬡ GitHub</a>
+            <!--<a class="social-link" href="#">in LinkedIn</a>
+            <a class="social-link" href="#">◎ Instagram</a>-->
+            <a class="social-link" href="mailto:urrrisaac@gmail.com">✉ Email</a>
+            </div>
+
+            <footer>
+                <span>© 2025 Isaac Urrutia</span>
+            </footer>
+
+        </section> <!-- Termina - [CONTACTO] -->
+
+    </div> <!-- Termina - [ PAGINA- HOME ]~|-->
 
 </head>
 <body>
