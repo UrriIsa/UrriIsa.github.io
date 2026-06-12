@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&family=DM+Serif+Display:ital@0;1&display=swap');
 
-/* ---- |~ VARIABLES ---- */
+/* ---------------- |~ VARIABLES --------------- */
 
 :root{
     --bg: #242424 ;
@@ -18,10 +18,10 @@
     --fontMono: 'Space Mono', sans-serif ;
 
     --radius: 4px ; 
-    --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) ;
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-/*-- |~ RESET -- */
+/* ---------------- |~ RESET ---------------- */
 *, *::before, *::after { /*con la selección de seudoelementos*/
     box-sizing: border-box ; /* para que respete el tamaño indicado*/
     margin: 0 ; 
@@ -51,7 +51,7 @@ img {
     display: block ; 
 }
 
-/* ---- |~ CURSOR ---- */
+/* ---------------- |~ CURSOR ---------------- */
 .cursorDot, .cursorRing{
     position: fixed ; /*lo quita del flujo normal y lo pone en otro lado*/
     border-radius: 50px ;
@@ -76,4 +76,77 @@ img {
 .cursorRing.hovered{
     width: 65px ;
     height: 65px ;
+}
+
+/* --------------- |~ CAPA VISUAL GRANULADA ----------------- */
+body::before{
+    content: '' ;
+    position: fixed ; /*mantenga fija al scroll*/
+    inset: 0 ; /*t|r|b|l| shorthand para poner la posición relativa a su contenedor*/
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E") ;
+    pointer-events: none ;
+    z-index: 1000 ;
+    opacity: 0.6 ;
+}
+
+/* --------------- |~ NAVBAR ----------------- */
+.navbar{
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    z-index: 500 ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ; /*espacio entre elemntos en linea*/
+    padding: 25px 58px ;
+    background: rgba(13,13,13,0.85) ;
+    backdrop-filter: blur(12px) ;
+    border-bottom: 2px solid var(--border);
+}
+
+.navLogo{
+    font-family: var(--fontDisplay) ;
+    font-size: 13px ;
+    font-weight: 700 ;
+    letter-spacing: 0.08rem ;
+    color: var(--acid) ;
+    text-transform: uppercase ;
+}
+
+.navLinks a::after{
+    content: '' ;
+    position: absolute ;
+    bottom: -4px ;
+    left: 0 ;
+    right: 0 ;
+    height: 1px ;
+    background-color: var(--acid) ;
+    transform: scaleX(0) ; /*escalar en eje x*/
+    transform-origin: left ;
+    transition: transform var(--transition) ;
+}
+
+.navLinks a:hover, .navLinks a:active{
+    color: var(--acid) ;
+}
+
+.navLinks a:hover::after .navLinks a.active::after{
+    transform: scaleX(1) ; /*al a hovered y active crea la linea*/
+}
+
+.navMenuBtn{
+    display: none ; /*quitarlo para solo ponerlo cuando la vista cambie*/
+    background: none ;
+    border: none ;
+    color: var(--cream) ;
+    cursor: none;
+    font-size: 20px ;
+
+}
+
+/* --------------- |~ ME  ----------------- */
+
+.me{
+    
 }
