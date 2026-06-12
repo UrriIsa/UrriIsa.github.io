@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@300;400;700;900&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* ---- |~ VARIABLES ---- */
+
+:root{
+    --bg: #242424 ;
+    --surface: #151515 ;
+    --border: #2a2a2a ;
+
+    --acid: #c8f53b ;
+    --sky: #5be0f5 ; 
+    --lavender:#c8b4ff;
+    --cream: #e8f5eb ;
+    --muted: #a6a6a6 ;
+
+    --fontDisplay: 'Unbounded', sans-serif ;
+    --fontSerif: 'DM Serif Display', sans-serif ;
+    --fontMono: 'Space Mono', sans-serif ;
+
+    --radius: 4px ; 
+    --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+/*-- |~ RESET -- */
+*, *::before, *::after { /*con la selección de seudoelementos*/
+    box-sizing: border-box ; /* para que respete el tamaño indicado*/
+    margin: 0 ; 
+    padding: 0; 
+}
+
+html { 
+    scroll-behavior: smooth; /*click en enlace interno lo lleve de manera suave*/
+}
+
+body {
+  background: var(--bg) ;
+  color: var(--cream) ;
+  font-family: var(--font-mono) ;
+  font-size: 15px ;
+  line-height: 1.7 ; /*interlineado*/
+  /*cursor : none ; /*oculta cursor*/
+  overflow-x: hidden ; /*oculta desbordamiendo lateral (horizontal)*/
+}
+
+a { 
+    color: inherit ; 
+    text-decoration: none ; 
+}
+img { 
+    max-width: 100% ; 
+    display: block ; 
+}
+
+/* ---- |~ CURSOR ---- */
+.cursorDot, .cursorRing{
+    position: fixed ; /*lo quita del flujo normal y lo pone en otro lado*/
+    border-radius: 50px ;
+    pointer-events: none ; /*para que no tenga eventos*/
+    z-index: 9999 ; /*mandarlo (stackearlo) hasta arriba*/
+    mix-blend-mode: difference ; /*toma el color y lo resta al fondo para hacer contrastes y cambios de color*/
+    transition: transform 0.15s ease, opacity 0.3s ease;
+}
+.cursorDot{
+    width : 8px ;
+    height: 8px ;
+    background:var(--acid) ;
+    transform: translate(-50%, -50%) ; /*izq-der, arr-ab*/
+}
+.cursorRing{
+    width: 36px ;
+    height: 36px ;
+    border: 2px solid var(--acid) ;
+    transform: translate(-50%, -50%) ;
+    transition: width 0.3s ease, height 0.3s ease, transform 0.08s ease ;
+}
+.cursorRing.hovered{
+    width: 65px ;
+    height: 65px ;
+}
