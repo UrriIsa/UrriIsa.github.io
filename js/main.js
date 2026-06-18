@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Si se queda el mouse recalcula más cerca
             de esta manera se hace más suave el movimiento, por ello el factor
         */
-        ringX += (mouseX - ringX) * 0.12 ; 
-        ringY += (mouseY - ringY) * 0.12 ;
+        ringX += (mouseX - ringX) * 0.10 ; 
+        ringY += (mouseY - ringY) * 0.10 ;
         ring.style.left = ringX + 'px' ;
         ring.style.top = ringY + 'px' ;
         requestAnimationFrame(animateRing) ; // lo vuelvo recursivo para que siempre se llame, se stackea, termina y vuelve a solicitar al navegador que cuando pueda lo haga
