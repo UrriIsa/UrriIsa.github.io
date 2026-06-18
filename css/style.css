@@ -5,19 +5,19 @@
 :root{
     --bg: #242424 ;
     --surface: #151515 ;
-    --border: #2a2a2a ;
+    --border: #6e6c6c ;
 
     --acid: #c8f53b ;
     --sky: #5be0f5 ; 
     --lavender:#c8b4ff;
     --cream: #e8f5eb ;
-    --muted: #a6a6a6 ;
+    --muted: #b8b6b6 ;
 
     --fontDisplay: 'Unbounded', sans-serif ;
     --fontSerif: 'DM Serif Display', sans-serif ;
     --fontMono: 'Space Mono', sans-serif ;
 
-    --radius: 4px ; 
+    --radius: 14px ; 
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
@@ -35,7 +35,7 @@ html {
 body {
   background: var(--bg) ;
   color: var(--cream) ;
-  font-family: var(--font-mono) ;
+  font-family: var(--fontMono) ;
   font-size: 15px ;
   line-height: 1.7 ; /*interlineado*/
   /*cursor : none ; /*oculta cursor*/
@@ -107,11 +107,27 @@ body::before{
 
 .navLogo{
     font-family: var(--fontDisplay) ;
-    font-size: 13px ;
+    font-size: 14px ;
     font-weight: 700 ;
     letter-spacing: 0.08rem ;
     color: var(--acid) ;
     text-transform: uppercase ;
+}
+
+.navLinks{
+    display: flex ;
+    gap: 36px ;
+    list-style: none ;
+}
+
+.navLinks a{
+    font-family: var(--fontMono) ;
+    font-size: 14px ;
+    letter-spacing: 0.12em ;
+    text-transform: uppercase;
+    color: var(--muted) ;
+    position: relative ;
+    transition: color var(--transition) ;
 }
 
 .navLinks a::after{
@@ -127,11 +143,11 @@ body::before{
     transition: transform var(--transition) ;
 }
 
-.navLinks a:hover, .navLinks a:active{
+.navLinks a:hover, .navLinks a.active{
     color: var(--acid) ;
 }
 
-.navLinks a:hover::after .navLinks a.active::after{
+.navLinks a:hover::after, .navLinks a.active::after{
     transform: scaleX(1) ; /*al a hovered y active crea la linea*/
 }
 
@@ -148,5 +164,106 @@ body::before{
 /* --------------- |~ ME  ----------------- */
 
 .me{
-    
+    min-height: 100vh ; /*viewport height, 1vh = 1% */
+    display: grid ;
+    grid-template-columns: 1fr 1fr ; /*define un contenedor grid con columnas del mismo width, 1fraccion y 1 fraccion (osea 1/2 y 1/2 de la pantalla)*/
+    padding-top: 80px ;
+    position: relative ;
+    overflow: hidden ; /*lo de ocultar el desbordamiento horizontal*/
+}
+
+.meTextCol{
+    display: flex ;
+    flex-direction: column ; /*stackea verticalmente*/
+    justify-content: center ;
+    padding: 80px 58px 80px 90px;
+    position: relative ;
+    z-index: 2 ;
+}
+
+.meTag{
+    display: inline-flex ;
+    align-items: center ;
+    gap: 8px ;
+    font-size: 14px ;
+    letter-spacing: 0.2em;
+    text-transform: uppercase ;
+    color: var(--lavender) ;
+    margin-bottom: 25px ;
+}
+
+.meTag::before{
+    content: '' ;
+    display: inline-block ;
+    width: 24px ;
+    background-color: var(--lavender);
+}
+
+.meName{
+    font-family: var(--fontDisplay) ;
+    font-size: clamp(40px, 6vw, 90px) ; /*el de enmedio es el punto de cambio, hace un tope, para que lo minimo sea 40px y lo maximo 90px, si está en el rango tomará lo que sea, por ejemplo, si el contenedor mide 100 el 60% es 60px, lo cual es mayor de 40px pero menos de 90px asi que se queda en 60, si es 200 el 60% es 120, lo cual es mayor a 90px asi que se queda en 90*/
+    font-weight: 900;
+    line-height: 0.92 ; /*interlineado, en 0 se sobreponen*/
+    text-transform: uppercase ;
+    letter-spacing: -0.02em ;
+    margin-bottom: 30px ;   
+}
+
+.meName span.accent {
+    color: var(--acid);
+}
+.meName span.outline{
+    -webkit-text-stroke: 2px var(--cream) ; /*como no es nativo se usa -webkit- entonces hace un contorno de 2px de color crema*/
+    color: transparent ;
+}
+
+.meDesc{
+    font-style: italic ;
+    font-size: 16px ;
+    color: var(--muted) ;
+    max-width: 700px ;
+    margin-bottom: 35px ;
+    line-height: 1.6 ; /*interlineado*/
+    text-align: justify ;
+}
+
+.meCTAs{
+    display: flex ; /*para elementos hijos alineen*/
+    gap: 16px ;
+    flex-wrap: wrap ; /*si ya no hay espacio que baje*/
+}
+
+.btn{
+    display: inline-flex ;
+    align-items: center ;
+    gap: 8px ;
+    padding: 14px 28px ;
+    font-size: 12px ;
+    letter-spacing: 0.1em ;
+    text-transform: uppercase ;
+    border: none ;
+    border-radius: var(--radius) ;
+    cursor: none ;
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+    position: relative ;
+    overflow: hidden ;
+}
+.btn:hover{
+    transform: translateY(-2px) ;
+}
+.btnPrimary{
+    background-color: var(--acid);
+    color: var(--surface);
+    font-weight: 700 ;
+}
+.btnPrimary:hover{
+    box-shadow: 0 8px 30px rgba(199, 245, 59, 0.35) ;
+}
+.btnGhost{
+    background: transparent ;
+    color: var(--cream );
+    border: 1px solid var(--acid);
+}
+.btnGhost:hover{
+    box-shadow: 0 8px 30px rgba(199, 245, 59, 0.35) ;
 }
