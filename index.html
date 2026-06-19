@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Urrutia</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./statics/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- preconnect para que tarde menos en cargar las fuentes, crossorigin para evitar problemas con esos archivos reales de las fuentes-->
     <link rel="icon" href="🌿">
@@ -77,10 +77,10 @@
             </div>
 
             <div class="meVisualCol">
-                <!-- <div class="meBGShape"></div> -->
+                <div class="meBGShape"></div>
 
                 <div class="mePhotoWrap">
-                    <img src="#" alt="Urri" onerror="this.style.background='#1e1e1e'; this.src=''">
+                    <img src="./statics/imgs/ᯓHikaru.jpeg" alt="Urri" onerror="this.style.background='#1e1e1e'; this.src=''">
                     <div clas="mePhotoBorder"></div>
                 </div>
 
@@ -102,14 +102,15 @@
         <!-- [ DIVISOR ] -->
         <!-- Para el div externo hago overflow:hidden para evitar q el contenido se desplace fuera del anto de la pantalla (lo que sale se oculta). border- top y bottom para los "rieles". El padding con shorthand de dos es arriba-abajo (parte1) izq-der(parte2), para no pegar el texto. -->
         <!-- Para el div interno con display:flex para alinear sus hijos en una fila. gap:48px para la separación constante de 48pixeles entre elementos. La animación es marquee que dura 18s es lineal (no hay variaciones) e infinita.-->
-         <!-- -->
-        <div style="overflow:hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:14px 0;"></div>
-            <div class="marqueeTrack" style="display:flex; gap:48px; width:max-content; animation:marquee 18s linear infinite; white-space:nowrap; font-family:'Unbounded',sans-serif; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#666;"></div>
+        <div style="overflow:hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:14px 0;">
+            <div class="marqueeTrack" >
                 <span>MATERIA 1</span><span style="color:#c8f53b">✦</span>
                 <span>MATERIA 2</span><span style="color:#c8f53b">✦</span>
                 <span>MATERIA 3</span><span style="color:#c8f53b">✦</span>
                 <span>MATERIA 4</span><span style="color:#c8f53b">✦</span>
                 <span>MATERIA 5</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 6</span><span style="color:#c8f53b">✦</span>
+                <span>MATERIA 7</span><span style="color:#c8f53b">✦</span>
             </div>
         </div> <!--Termina - [ DIVISOR ] -->
 
@@ -123,9 +124,11 @@
                     <p>
                         I've focused on the intersection of computer science and biology. However, I enjoy applying the technical foundations of computing in interdisciplinary settings, so I've been working on broadening my perspective.
                     </p>
+                    
                     <p>
                         My Social Service Internship at the Xylarum of the Institute of Biology, UNAM, led to a project that was presented at the XXIII Mexican Botanical Congress, held in Villahermosa, Tabasco. It is currently in the publication process.
                     </p>
+                    
                     <p>
                         Outside of academia, art is one of my passions.
                     </p>
@@ -239,3 +242,5 @@
 <script src="./js/main.js"></script>
 </body>
 </html>
+
+<!-- Cambia estilo del marqueeTrack, acomoda aboutText-->
