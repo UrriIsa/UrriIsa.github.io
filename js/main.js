@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ---- |~ CURSOR ---- */
+    /* -------------------- |~ CURSOR ------------------------- */
     const dot = document.querySelector('.cursorDot') ;
     const ring = document.querySelector('.cursorRing') ;
 
@@ -35,4 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
         el.addEventListener('mouseenter', () => ring.classList.add('hovered')) ; // si el mouse entra añado clase hovered
         el.addEventListener('mouseleave', () => ring.classList.remove('hovered')) ; // si el mouse sale quito clase hovered
     });
+
+
+    /* -------------------- |~ MARQUEE ------------------------- */
+    const marquee = document.querySelector('.marqueeTrack');
+    if(marquee){
+        const clone = marquee.innerHTML ;
+        marquee.innerHTML += clone ;
+    }
 })
+
+/*añade marquee  */
