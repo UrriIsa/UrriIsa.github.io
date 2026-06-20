@@ -44,7 +44,16 @@
         transform: translateY(0) ;
     }
     50%{
-        transform: translateY(8px);
+        transform: translateY(8px) ;
+    }
+}
+
+@keyframes scrolling{
+    0%{
+        transform: translateX(0) ;
+    }
+    100%{
+        transform: translateX(-50%) ;
     }
 }
 
@@ -318,8 +327,8 @@ body::before{
 
      ACIDO
     */ 
-    
-background : radial-gradient(ellipse at 55% 50%, rgba(191, 255, 0, 0.4) 0%, transparent 65%);
+    background : radial-gradient(ellipse at 55% 50%, rgba(191, 255, 0, 0.4) 0%, transparent 65%);
+
     
 
 }
@@ -414,18 +423,30 @@ background : radial-gradient(ellipse at 55% 50%, rgba(191, 255, 0, 0.4) 0%, tran
 
 /* ------------------- |~ DIVISOR (MARQUEE) -------------------------- */
 
+
+.marquee{
+    overflow:hidden ;
+    width: 100% ;
+    padding: 14px ;
+    border-top: 2px solid #3a3a3a ;
+    border-bottom:2px solid #3a3a3a ;
+}
+
 .marqueeTrack{
     display: flex;
-    gap: 48px;
+    gap: 48px ;
     width: max-content;
-    animation: marquee 18s linear infinite;
-    white-space: nowrap;
-    font-family: 'Unbounded', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #666;
+    animation: scrolling 18s linear infinite ;
+    letter-spacing: 0.2em ;
+    text-transform: uppercase ;
 }
+
+.marqueeItem{
+    flex-shrink: 0 ;
+}
+
+
+
 
 /* ------------------- |~ SECTIONS  -------------------------- */
 .section{
@@ -487,9 +508,6 @@ background : radial-gradient(ellipse at 55% 50%, rgba(191, 255, 0, 0.4) 0%, tran
     margin-top: 25px ;
 } /*investigar operando + en el p+p, yo creo q es como en la clase aboutText si hay un p despues de un p que haga*/
 
-/*refactor&feat [] cambio de carpeta, imagen de prueba, fondo granulado, tags del inicio, scroll hint, clase section y texto del about me
-feat[img] : inicio carpeta, imagen de prueba, sacada de internet creditos a quien corresponda.
-*/
 
 /* DUDAS
     GAP que es 
