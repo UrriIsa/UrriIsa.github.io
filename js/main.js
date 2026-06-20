@@ -37,12 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    /* -------------------- |~ MARQUEE ------------------------- */
-    const marquee = document.querySelector('.marqueeTrack');
-    if(marquee){
-        const clone = marquee.innerHTML ;
-        marquee.innerHTML += clone ;
-    }
+    
 })
 
 /*añade marquee  */
