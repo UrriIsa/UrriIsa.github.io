@@ -609,6 +609,7 @@ body::before{
     background-position: center ;
     transition: transform 0.4s ease ;
     filter: brightness(0.4) ;
+    
 }
 .portfolioCard:hover .cardBg{
     filter: brightness(0.5) ;
@@ -621,6 +622,7 @@ body::before{
     display: flex ;
     flex-direction: column ;
     justify-content: flex-end ; /*para posicionar al final (abajo) del contenedor*/
+    cursor : none ;
 }
 
 .cardTag{
@@ -653,14 +655,14 @@ body::before{
 
 .cardTitle{
     font-family: var(--fontDisplay) ;
-    font-size: 18px ;
+    font-size: 19px ;
     font-weight: 700 ;
     line-height: 1.2 ;
     margin-bottom: 8px ;
 }
 
 .cardDesc{
-    font-size: 13px ;
+    font-size: 14px ;
     color : rgba(245, 240, 232, 0.706);
 }
 
@@ -685,6 +687,85 @@ body::before{
     color: var(--surface) ;
     transform: rotate(0deg);
 }
+/*[A]*/
+
+
+
+
+
+
+
+
+
+
+/* ------------------- |~ CONTACTO -------------------------- */
+
+.contactSection{
+    background: var(--bg) ;
+    border-top: 1px solid var(--border) ;
+    text-align: center ;
+    padding: 100px 80px ;
+}
+
+.contactTitle{
+    font-family: var(--fontDisplay) ;
+    font-size: clamp(36px, 6vw, 80px );
+    font-weight: 900 ;
+    text-transform: uppercase ;
+    line-height: 0.9 ;
+    margin-bottom: 32px ;
+}
+.contactTitle .outline{
+    -webkit-text-stroke: 1.5px var(--acid) ;
+    color: transparent ;
+}
+
+.contactSub{
+    font-size: 16px ;
+    color: var(--muted) ;
+    max-width: 600px ;
+    margin: 0 auto 48px ;
+}
+.socialLinks{
+    display: flex ;
+    justify-content: center ;
+    gap: 16px ;
+    flex-wrap: wrap ;
+    margin-top: 48px ;
+}
+
+.socialLink{
+    display: flex ;
+    align-items: center ;
+    gap: 8px ;
+    padding: 12px 20px ;
+    border: 1px solid var(--border) ;
+    border-radius: 100px ;
+    font-size: 12px ;
+    letter-spacing: 0.1em ;
+    text-transform: uppercase ;
+    color: var(--muted) ;
+    transition: color var(--transition), border-color var(--transition) ;
+    cursor : none ;
+}
+
+.socialLink:hover{
+    color: var(--cream) ;
+    border-color: var(--cream) ;
+}
+
+
+/* ------------------- |~ FOOTER -------------------------- */
+footer{
+    padding: 24px 80px ;
+    border-top: 1px solid var(--border) ;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    font-size: 12px ;
+    color: var(--muted) ;
+}
+
 /* DUDAS
     object-fit
     unidad de medida em
