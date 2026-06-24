@@ -37,7 +37,85 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
-})
+    /* ---------------------------|~ NAVEGACION -------------------- */
+    const pages = document.querySelectorAll('.page') ;
+    const navItems = document.querySelectorAll('.navLinks a[data-page]') ; // Seleccionamos de la clase navLinks los elementos a que tengan atributo data-page
+
+    function showPage(pageId){
+        pages.forEach(p=> {
+            p.classList.remove('active') ; 
+            p.style.opacity = 0 ;
+        }) ;
+
+        navItems.forEach(a=> a.classList.remove('active')) ;
+
+        const target = document.getElementById('page' + pageId.charAt(0).toUpperCase() + pageId.slice(1)) ; 
+        
+        if(target){
+            target.style.transition = 'opacity 0.4s ease' ;
+            target.classList.add('active') ;
+            //animacion
+            setTimeout(() => { target.style.opacity = 1; }, 20 ) ;
+            
+        }
+
+        const activeLink = document.querySelector(`.navLinks a[data-page="${pageId}"]`) ;
+        if(activeLink){
+            activeLink.classList.add('active') ;
+        }
+
+        window.scrollTo({ top:0 , behavior : 'smooth' }) ;
+
+    }
+
+    navItems.forEach(link=>{
+        link.addEventListener( 'click', e => {
+            e.preventDefault() ;
+            const page = link.dataset.page ;
+            showPage(page) ;
+        });
+    }) ;
+
+    document.querySelectorAll('[data-goto]').forEach(btn =>{
+        btn.addEventListener('click', e=> {
+            e.preventDefault();
+            showPage(btn.dataset.goto) ;
+        });
+    }) ;
+    showPage('home') ;
+
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+        btn.addEventListener('click',() =>{
+            document.querySelectorAll('[data-filter]').forEach(b =>{
+                b.classList.remove('btnPrimary') ;
+                b.classList.add('btnGhost') ;
+            }) ;
+
+            btn.classList.remove('btnGhost') ;
+            btn.classList.add('btnPrimary') ;
+
+            const filter = btn.dataset.filter ;
+
+            document.querySelectorAll('.portfolioCard').forEach(card =>{
+                const match = filter === 'todo' || card.dataset.category === filter ; 
+                card.style.display = match ? '' : 'none' ;
+                card.style.grid
+            }) ;
+
+            // Si es filtro específico, iguala columnas a 6
+            const visibles = document.querySelectorAll('.portfolioCard:not([style*="none"])') ;
+            visibles.forEach(card => {
+                if (filter === 'todo') {
+                    card.style.gridColumn = '' ; // regresa al CSS original
+                } else {
+                    card.style.gridColumn = 'span 6' ;
+                }
+            }) ;
+
+        }) ;
+    }) ;
+
+
+}) ;
 
 /*añade marquee  */
