@@ -764,9 +764,8 @@ footer{
     color: var(--muted) ;
 }
 
-
 /* ------------------- |~ PAGE TRANSITIONS -------------------------- */
-
+/*QUIZÁS QUITAR*/
 .page{
     display: none ;
     opacity: 0 ;

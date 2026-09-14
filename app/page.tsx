@@ -4,9 +4,9 @@
 import Link from 'next/link';
 
 
+
 export default function Home() {
-  // const revealAbout = useReveal()
-  // const revealStats = useReveal()
+
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function Home() {
       ────────────────────────────────────────────── */}
       <section className="me">
         <div className="meTextCol">
-          <span className="meTag">Computación · Biología · Arte</span>
+          <span className="meTag">Computer science · Biology · Art</span>
 
           <h1 className="meName">
             Isaac <br />
@@ -24,17 +24,16 @@ export default function Home() {
           </h1>
 
           <p className="meDesc">
-            Estudiante de Ciencias de la Computación e investigador, conectando academia
-            e industria. Enfocado en Inteligencia Artificial, Biotecnología y
-            Neurociencia computacional.
+            Computer science student and researcher, bridging the gap between academia
+            and industry. Focused on bioinformatics and theoretical computing
           </p>
 
           <div className="meCTAs">
             <Link className="btn btnPrimary" href="/portfolio">
-              Ver Portfolio
+              See Portfolio
             </Link>
             <Link className="btn btnGhost" href="/cv">
-              Ver CV
+              See CV
             </Link>
           </div>
         </div>
@@ -61,12 +60,12 @@ export default function Home() {
 
           <div className="meFloatTag meFloatTag1">
             <span className="dot" />
-            Disponible para colaborar
+            Available to collaborate
           </div>
 
           <div className="meFloatTag meFloatTag2">
             <span className="dot" />
-            Hola
+            Hii
           </div>
         </div>
 
@@ -83,47 +82,46 @@ export default function Home() {
       ────────────────────────────────────────────── */}
       <section className="section">
         <div className="sectionLabel" style={{ color: '#c8b4ff', fontSize: '1rem' }}>
-          Sobre mí
+          About me
         </div>
         <h2 className="sectionTitle">
           Ciencia &amp; <span className="outline">Arte</span>
         </h2>
 
         <div className="aboutGrid">
-          {/*<div ref={revealAbout} className="aboutText reveal">*/}
+          <div className="aboutText reveal">
             <p>
-              Me he centrado en la intersección de la informática y la biología. Sin
-              embargo, disfruto aplicando los fundamentos técnicos de la computación en
-              contextos interdisciplinarios, por lo que he estado trabajando para ampliar
-              mi perspectiva.
+              I have focused on the intersection of computer science and biology. I enjoy applying the technical fundamentals of computing in
+              interdisciplinary contexts, so I have been working to broaden
+              my perspective.
             </p>
             <p>
-              Mi pasantía de Servicio Social en la Xiloteca del Instituto de Biología de
-              la UNAM dio lugar a un proyecto que se presentó en el XXIII Congreso
-              Mexicano de Botánica, celebrado en Villahermosa, Tabasco. Actualmente se
-              encuentra en proceso de publicación.
+              My social service internship at the Xyloteka of the Institute of Biology at
+              UNAM led to a project that was presented at the 23rd Mexican Congress
+              of Botany, held in Villahermosa, Tabasco. It is currently
+              in the process of being published.
             </p>
-            <p>Fuera del ámbito académico, el arte es una de mis pasiones.</p>
-          {/*</div>/*}
+            <p>Outside of academia, art is one of my passions.</p>
+          </div>
 
-          {/*<div ref={revealStats} className="statsGrid reveal">*/}
+          <div className="statsGrid reveal">
             <div className="statCard">
               <div className="statNumber c1">3.66</div>
               <div className="statLabel">GPA / 4.0</div>
             </div>
             <div className="statCard">
               <div className="statNumber c2">3</div>
-              <div className="statLabel">Años investigando</div>
+              <div className="statLabel">Years of research</div>
             </div>
             <div className="statCard">
               <div className="statNumber c3">1</div>
-              <div className="statLabel">Publicaciones en proceso</div>
+              <div className="statLabel">Publications in Progress</div>
             </div>
             <div className="statCard">
               <div className="statNumber c4">2</div>
-              <div className="statLabel">Estancias / pasantías</div>
+              <div className="statLabel">Interships / Research stay</div>
             </div>
-          {/*</div>*/}
+          </div>
         </div>
       </section>
 
@@ -133,9 +131,9 @@ export default function Home() {
           [ PROYECTOS DESTACADOS ]
       ────────────────────────────────────────────── */}
       <section className="section">
-        <div className="sectionLabel">Trabajo reciente</div>
+        <div className="sectionLabel">Recent work </div>
         <h2 className="sectionTitle">
-          Proyectos <span className="outline">Destacados</span>
+          Featured <span className="outline">Proyects</span>
         </h2>
 
         {/* showFilters=false y showAll=false → muestra los primeros 4 sin filtros */}
