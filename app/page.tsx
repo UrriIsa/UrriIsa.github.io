@@ -25,7 +25,7 @@ export default function Home() {
 
           <p className="meDesc">
             Computer science student and researcher, bridging the gap between academia
-            and industry. Focused on bioinformatics and theoretical computing
+            and industry. Focused on bioinformatics and theoretical computing.
           </p>
 
           <div className="meCTAs">
@@ -85,23 +85,39 @@ export default function Home() {
           About me
         </div>
         <h2 className="sectionTitle">
-          Ciencia &amp; <span className="outline">Arte</span>
+          Sience &amp; <span className="outline">Life</span>
         </h2>
 
         <div className="aboutGrid">
           <div className="aboutText reveal">
             <p>
-              I have focused on the intersection of computer science and biology. I enjoy applying the technical fundamentals of computing in
+              I have focused on the intersection of <span style={{ fontWeight: 'bold', color: '#c8f53b ', textDecoration: 'none' }}>computer science</span> and <span style={{ fontWeight: 'bold', color: '#c8f53b ', textDecoration: 'none' }}>biology</span>. I enjoy applying the technical fundamentals of computing in
               interdisciplinary contexts, so I have been working to broaden
-              my perspective.
+              my perspective. Outside of academia, art is one of my passions.
             </p>
             <p>
-              My social service internship at the Xyloteka of the Institute of Biology at
+              My social service internship at the <span style={{ fontWeight: 'bold', color: '#c8f53b ', textDecoration: 'none' }}>Xylarum </span> of the Institute of Biology at
               UNAM led to a project that was presented at the 23rd Mexican Congress
               of Botany, held in Villahermosa, Tabasco. It is currently
               in the process of being published.
             </p>
-            <p>Outside of academia, art is one of my passions.</p>
+            <p>
+              I really enjoy science outreach. I've attended various events, 
+              and I currently have an Instagram account dedicated to it : 
+              <a 
+                href="https://www.instagram.com/urri.php/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontWeight: 'bold',
+                  color: '#c8f53b ',
+                  textDecoration: 'none'
+                }} 
+              > 
+              @urri.php
+              </a>.
+              I'm also a member of Impulso STEAM (<a href="https://www.instagram.com/impulso.steam/" target="_blank" style={{ fontWeight: 'bold', color: '#c8f53b ', textDecoration: 'none' }} >@impulso.steam</a>), a collective supported by INJUVE.
+            </p>
           </div>
 
           <div className="statsGrid reveal">
