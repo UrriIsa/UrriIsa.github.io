@@ -2,6 +2,7 @@
 
 // importar el use marquee y el grid de components y el hook del reveal
 import Link from 'next/link';
+import PortfolioGrid from '@/components/PortfolioGrid';
 
 
 
@@ -47,12 +48,12 @@ export default function Home() {
               Para un render de Blender puedes usar una imagen .png o .webp.
             */}
             <img
-              src="/imgs/foto.jpeg"
+              src="/images/foto.png"
               alt="Urri"
               onError={(e) => {
                 const img = e.currentTarget
-                img.style.background = '#1e1e1e'
-                img.src = ''
+                img.onerror = null          // evita bucles
+                img.style.visibility = 'hidden'
               }}
             />
             <div className="mePhotoBorder" />
@@ -153,11 +154,11 @@ export default function Home() {
         </h2>
 
         {/* showFilters=false y showAll=false → muestra los primeros 4 sin filtros */}
-        {/*<PortfolioGrid showFilters={false} showAll={false} />*/}
+        <PortfolioGrid showFilters={false} showAll={false} />
 
         <div style={{ marginTop: 40, textAlign: 'center' }}>
           <Link className="btn btnGhost" href="/portfolio">
-            Ver todo el portfolio
+            See the entire portfolio
           </Link>
         </div>
       </section>
@@ -167,14 +168,14 @@ export default function Home() {
       ────────────────────────────────────────────── */}
       <section className="contactSection">
         <h2 className="contactTitle">
-          Contáctame
+          Contact me
           <br />
-          <span className="outline">Colaboremos</span>
+          <span className="outline">Let's collaborate</span>
         </h2>
 
         <p className="contactSub">
-          Abierto a proyectos de investigación, oportunidades académicas y colaboraciones
-          artísticas.
+          Open to research projects, academic opportunities, and
+          artistic collaborations.
         </p>
 
         <a
@@ -182,7 +183,7 @@ export default function Home() {
           style={{ margin: '0 auto', fontSize: 14, padding: '18px 40px' }}
           href="mailto:urrrisaac@gmail.com"
         >
-          Escríbeme
+          Write to me
         </a>
 
         <div className="socialLinks">
