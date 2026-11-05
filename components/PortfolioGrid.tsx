@@ -24,7 +24,7 @@ export default function PortfolioGrid({ showAll = true, showFilters = true}: Pro
     // si filtro entonces 6 para todos
     // sin filtro respeto la carta
     const getGridColumn = () =>{
-       (active !== 'todo' ? 'span 6' : undefined)
+       return active !== 'todo' ? 'span 6' : undefined
     }
 
     return (
