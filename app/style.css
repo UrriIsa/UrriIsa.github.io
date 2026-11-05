@@ -72,7 +72,7 @@ body {
   background: var(--bg) ;
   color: var(--cream) ;
   font-family: var(--fontMono) ;
-  font-size: 15px ;
+  font-size: 19px ;
   line-height: 1.7 ; /*interlineado*/
   cursor : none ; /*oculta cursor*/
   overflow-x: hidden ; /*oculta desbordamiendo lateral (horizontal)*/
@@ -153,7 +153,7 @@ body::before{
 
 .navLogo{
     font-family: var(--fontDisplay) ;
-    font-size: 14px ;
+    font-size: 15px ;
     font-weight: 700 ;
     letter-spacing: 0.08rem ;
     color: var(--acid) ;
@@ -168,7 +168,7 @@ body::before{
 
 .navLinks a{
     font-family: var(--fontMono) ;
-    font-size: 14px ;
+    font-size: 15px ;
     letter-spacing: 0.12em ;
     text-transform: uppercase;
     color: var(--muted) ;
@@ -231,7 +231,7 @@ body::before{
     display: inline-flex ;
     align-items: center ;
     gap: 8px ;
-    font-size: 14px ;
+    font-size: 15px ;
     letter-spacing: 0.2em;
     text-transform: uppercase ;
     color: var(--lavender) ;
@@ -266,7 +266,7 @@ body::before{
 
 .meDesc{
     /*font-style: italic ;*/
-    font-size: 16px ;
+    font-size: 17px ;
     color: var(--muted) ;
     max-width: 700px ;
     margin-bottom: 35px ;
@@ -352,7 +352,7 @@ body::before{
 
 .mePhotoWrap img{
     width: 100% ;
-    height: 100% ;
+    height: 80% ;
     object-fit: cover ;
     /*osea le decimos q agarre el 100% del contenedor y q lo fitee bien?????'*/
     border-radius: var(--radius);
@@ -361,9 +361,10 @@ body::before{
     right: 5%;
 }
 
-/*[] ALGO PASA Q NO LO TOMA*/
 .mePhotoBorder{
     position: absolute ;
+    width: 100% ;
+    height: 80% ;
     top: 20px ;
     left: 20px ;
     right: -20px ;
@@ -378,7 +379,7 @@ body::before{
     border: 1px solid var(--border) ;
     border-radius: var(--radius) ;
     padding: 12px 18px ;
-    font-size: 14px ;
+    font-size: 15px ;
     display: flex ;
     align-items: center ;
     gap: 8px ;
@@ -415,7 +416,7 @@ body::before{
     display: flex ;
     align-items: center ;
     gap: 12px ;
-    font-size: 11px ;
+    font-size: 17px ;
     letter-spacing: 0.15em ;
     text-transform: uppercase ;
     color: var(--muted);
@@ -464,7 +465,7 @@ body::before{
 }
 
 .sectionLabel{
-    font-size: 14px ;
+    font-size: 15px ;
     letter-spacing: 0.2em ;
     text-transform: uppercase ;
     color: var(--lavender) ;
@@ -505,7 +506,7 @@ body::before{
     align-items: start ;
 }
 .aboutText{
-    font-size: 16px ;
+    font-size: 17px ;
     color: var(--text) ;
     max-width: 700px ;
     margin-bottom: 35px ;
@@ -539,7 +540,7 @@ body::before{
 
 .statNumber{
     font-family: var(--fontDisplay) ;
-    font-size: 42px ;
+    font-size: 48px ;
     font-weight: 900 ;
     line-height: 1 ;
     margin-bottom: 8px ;
@@ -559,7 +560,7 @@ body::before{
 }
 
 .statLabel{
-    font-size: 12px ;
+    font-size: 14px ;
     letter-spacing: 0.1em ;
     text-transform: uppercase ;
     color: var(--muted) ;
@@ -626,7 +627,7 @@ body::before{
 .cardTag{
     display: inline-block ;
     padding: 4px 10px ;
-    font-size: 10px ;
+    font-size: 12px ;
     letter-spacing: 0.15em ;
     text-transform: uppercase ;
     border-radius: 2px ;
@@ -653,14 +654,14 @@ body::before{
 
 .cardTitle{
     font-family: var(--fontDisplay) ;
-    font-size: 19px ;
+    font-size: 20px ;
     font-weight: 700 ;
     line-height: 1.2 ;
     margin-bottom: 8px ;
 }
 
 .cardDesc{
-    font-size: 14px ;
+    font-size: 15px ;
     color : rgba(245, 240, 232, 0.706);
 }
 
