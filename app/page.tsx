@@ -11,9 +11,9 @@ export default function Home() {
 
   return (
     <>
-      {/* ──────────────────────────────────────────────
+      {/* --------------------------------------------
           [ YO / HERO ]
-      ────────────────────────────────────────────── */}
+      -------------------------------------------- */}
       <section className="me">
         <div className="meTextCol">
           <span className="meTag">Computer science · Biology · Art</span>
@@ -73,14 +73,14 @@ export default function Home() {
         <div className="meScrollHint">Scroll</div>
       </section>
 
-      {/* ──────────────────────────────────────────────
+      {/* --------------------------------------------
           [ MARQUEE ]
-      ────────────────────────────────────────────── */}
+      -------------------------------------------- */}
       {/*<Marquee />*/}
 
-      {/* ──────────────────────────────────────────────
+      {/* --------------------------------------------
           [ SOBRE MÍ ]
-      ────────────────────────────────────────────── */}
+      ------------------------------------------------- */}
       <section className="section">
         <div className="sectionLabel" style={{ color: '#c8b4ff', fontSize: '1rem' }}>
           About me
@@ -144,9 +144,9 @@ export default function Home() {
 
       <div className="sectionDivider" />
 
-      {/* ──────────────────────────────────────────────
+      {/* --------------------------------------------
           [ PROYECTOS DESTACADOS ]
-      ────────────────────────────────────────────── */}
+      --------------------------------------------*/}
       <section className="section">
         <div className="sectionLabel">Recent work </div>
         <h2 className="sectionTitle">
@@ -163,9 +163,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ──────────────────────────────────────────────
+      {/* --------------------------------------------
           [ CONTACTO ]
-      ────────────────────────────────────────────── */}
+      -------------------------------------------- */}
       <section className="contactSection">
         <h2 className="contactTitle">
           Contact me
