@@ -18,9 +18,13 @@
     --electric : #3b54f5 ; /**/
     --rose: #FC0FC0 ; /**/
 
-    --fontDisplay: 'Unbounded', sans-serif ;
+   /* --fontDisplay: 'Unbounded', sans-serif ;
     --fontSerif: 'DM Serif Display', sans-serif ;
-    --fontMono: 'Space Mono', sans-serif ;
+    --fontMono: 'Space Mono', sans-serif ;*/
+
+    --fontMono: 'Space Mono', monospace;
+    --fontDisplay: 'Unbounded Variable', sans-serif;
+    --fontSerif: 'DM Serif Display', serif;
 
     --radius: 14px ; 
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1) ;
