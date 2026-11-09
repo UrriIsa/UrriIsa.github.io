@@ -62,7 +62,7 @@ export const projects: Project[] = [
     tag: 'Java',
     tagClass: 'java',
     title: 'Terminal Spelling Challenge',
-    desc: 'Aplicación interactiva de consola desarrollada en Java para el entrenamiento y la mejora de la ortografía mediante lógica de terminal.',
+    desc: 'An interactive console application developed in Java for spelling practice and improvement using terminal-based logic.',
     href: 'https://github.com/UrriIsa/java-projects/tree/main/spellingGame',
     size: 'medium',
     media: {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     tag: 'C / Linux Dev',
     tagClass: 'C',
     title: 'Snake Game — Terminal',
-    desc: 'Implementación del juego clásico utilizando la biblioteca ncurses para la manipulación de la terminal en entornos Linux/Unix.',
+    desc: 'Implementation of the classic game using the ncurses library for terminal manipulation in Linux/Unix environments.',
     href: 'https://github.com/UrriIsa/cpp-algorithms/tree/master/snakeGame',
     size: 'large',
     media: {
