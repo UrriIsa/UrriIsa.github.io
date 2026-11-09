@@ -1,5 +1,21 @@
+
 import type { Metadata } from "next";
-/*import { Geist, Geist_Mono } from "next/font/google";*/
+import "@fontsource/space-mono/400.css";
+import "@fontsource/space-mono/400-italic.css";
+import "@fontsource/space-mono/700.css";
+import "@fontsource/space-mono/700-italic.css";
+import "@fontsource-variable/unbounded";
+import "@fontsource/dm-serif-display/400.css";
+import "@fontsource/dm-serif-display/400-italic.css";
+import "./style.css";
+import Navbar from '@/components/Navbar';
+import Cursor from '@/components/Cursor';
+
+
+
+/*
+import type { Metadata } from "next";
+/*import { Geist, Geist_Mono } from "next/font/google";
 import {Space_Mono, Unbounded, DM_Serif_Display} from "next/font/google" ;
 import "./style.css";
 import Navbar from '@/components/Navbar';
@@ -22,7 +38,10 @@ const dmSerif = DM_Serif_Display({
   weight: ["400"],
   style: ["normal", "italic"],
   variable: "--fontSerif",
-});
+
+
+  <html lang="en" className={`${spaceMono.variable} ${dmSerif.variable} ${unbounded.variable}`}>
+});*/
 
 
 export const metadata: Metadata = {
@@ -39,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceMono.variable} ${dmSerif.variable} ${unbounded.variable}`}>
+    <html lang="en">
       <body>
           <Navbar/>
           <Cursor/>
