@@ -19,7 +19,7 @@ export interface Project{
 
 // Categorías para los filtros del portfolio
 export const filterLabels: Record<string, string> = {
-  todo:        'Todo',
+  all:        'All',
   divulgacion: 'Divulgación',
   dev:         'Dev',
   ds:          'Data Science',
