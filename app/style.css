@@ -595,11 +595,17 @@ body::before{
     border-color: var(--acid) ;
 }
 
-.portfolioCard.large{
-    grid-column: span 7 ;
+.portfolioCard.small{
+    grid-column: span 4 ;
 }
 .portfolioCard.medium{
     grid-column: span 5 ;
+}
+.portfolioCard.half{
+    grid-column: span 6 ;
+}
+.portfolioCard.large{
+    grid-column: span 7 ;
 }
 .portfolioCard.wide{
     grid-column: span 12 ;
@@ -655,6 +661,10 @@ body::before{
 .cardTag.divulgacion{
     background: rgba(91, 150, 245, 0.2) ;
     color: var(--sky) ;
+}
+.cardTag.web{
+    background: rgba(162, 83, 241, 0.318) ;
+    color: var(--lavender) ;
 }
 
 .cardTitle{
