@@ -80,6 +80,7 @@ body {
   line-height: 1.7 ; /*interlineado*/
   cursor : none ; /*oculta cursor*/
   overflow-x: hidden ; /*oculta desbordamiendo lateral (horizontal)*/
+  padding: 0 7%;
 }
 
 a { 
@@ -415,7 +416,7 @@ body::before{
 
 .meScrollHint{
     position: absolute ;
-    bottom: 32px ;
+    bottom: 82px ;
     left: 80px ;
     display: flex ;
     align-items: center ;
