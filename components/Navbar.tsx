@@ -7,9 +7,9 @@ import { useParams, usePathname } from 'next/navigation' // hooks para navegaci√
 const links = [
     {label : 'Home', href : '/'},
     {label : 'Portfolio', href : '/portfolio'},
-    {label : 'Presentaciones', href : '/presentaciones'},
-    {label : 'Publicaciones', href : '/publicaciones'},
-    {label : 'Ense√±anza', href : '/ensenanza'},
+    {label : 'Presentations', href : '/presentaciones'},
+    {label : 'Publications', href : '/publicaciones'},
+    {label : 'Teaching', href : '/ensenanza'},
     {label : 'CV', href : '/cv'}
 ] // constante de datos, arreglo con los objetos 
 

@@ -5,7 +5,7 @@ import {projects, filterLabels } from '@/data/projects'
 import PortfolioCard from './PortfolioCard'
 
 
-const allCategories = ['todo', ...Array.from(new Set (projects.map((p) => p.category)))]
+const allCategories = ['all', ...Array.from(new Set (projects.map((p) => p.category)))]
 
 interface Props{
     // si falsoo es para los 4 de home
@@ -15,16 +15,16 @@ interface Props{
 }
 
 export default function PortfolioGrid({ showAll = true, showFilters = true}: Props){
-    const [active, setActive] = useState('todo')
+    const [active, setActive] = useState('all')
 
     const visible = projects.filter((p)=> 
-        active === 'todo' ? true : p.category === active
+        active === 'all' ? true : p.category === active
     ).slice(0, showAll ? undefined : 4)
 
     // si filtro entonces 6 para todos
     // sin filtro respeto la carta
     const getGridColumn = () =>{
-       return active !== 'todo' ? 'span 6' : undefined
+       return active !== 'all' ? 'span 6' : undefined
     }
 
     return (
